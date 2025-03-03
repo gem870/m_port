@@ -5,10 +5,9 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion, useMotionTemplate, useMotionValue, useMotionValueEvent, animate } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 import MyPic from "@/components/asset/vitor.png"
-import { useRouter } from "next/router";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#1E67C6", "#DD335C"];
 
@@ -141,15 +140,15 @@ export const Navbar = () => {
 
                     {/* Social Media Links */}
                    <div className="mt-2 flex space-x-4 justify-center ">
-                    <a href="https://github.com/gem870" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://github.com/gem870" target="_blank" rel="noopener noreferrer">
                       <FaGithub className="text-white text-2xl hover:text-gray-400 transition" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/chibuike-emmanuel-b8b29b269/" target="_blank" rel="noopener noreferrer">
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/chibuike-emmanuel-b8b29b269/" target="_blank" rel="noopener noreferrer">
                       <FaLinkedin className="text-white text-2xl hover:text-gray-400 transition" />
-                    </a>
-                    <a href="https://x.com/gem_vic" target="_blank" rel="noopener noreferrer">
+                    </Link>
+                    <Link href="https://x.com/gem_vic" target="_blank" rel="noopener noreferrer">
                       <FaTwitter className="text-white text-2xl hover:text-gray-400 transition" />
-                    </a>
+                    </Link>
                   </div>
                   </div>
 

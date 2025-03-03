@@ -2,13 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { motion, useMotionValue, useMotionValueEvent, animate } from "framer-motion";
-import Image from "next/image";
 import DOMPurify from "dompurify";
 import Link from "next/link";
 
 const MOGODB_URL = process.env.NEXT_PUBLIC_BACKEND_BLOG_URL as string;
-
-alert(MOGODB_URL)
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 

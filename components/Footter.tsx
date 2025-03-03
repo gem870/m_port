@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 import { motion, useMotionTemplate, useMotionValue, useMotionValueEvent, animate } from "framer-motion";
@@ -54,18 +53,18 @@ const color = useMotionValue(COLORS_TOP[0]);
         <h2 className="text-3xl font-bold">Get in Touch</h2>
         <p className="mt-4 text-gray-400">Feel free to reach out to me for collaborations or job opportunities.</p>
         <div className="flex justify-center mt-6 space-x-6">
-          <a href="mailto:ve48381@gmail.com" className="text-2xl text-gray-400 hover:text-white transition">
+          <Link href="mailto:ve48381@gmail.com" className="text-2xl text-gray-400 hover:text-white transition">
             <FaEnvelope />
-          </a>
-          <a href="https://github.com/gem870" target="_blank" className="text-2xl text-gray-400 hover:text-white transition">
+          </Link>
+          <Link href="https://github.com/gem870" target="_blank" className="text-2xl text-gray-400 hover:text-white transition">
             <FaGithub />
-          </a>
-          <a href="https://www.linkedin.com/in/chibuike-emmanuel-b8b29b269/" target="_blank" className="text-2xl text-gray-400 hover:text-white transition">
+          </Link>
+          <Link href="https://www.linkedin.com/in/chibuike-emmanuel-b8b29b269/" target="_blank" className="text-2xl text-gray-400 hover:text-white transition">
             <FaLinkedin />
-          </a>
-          <a href="https://x.com/gem_vic" target="_blank" className="text-2xl text-gray-400 hover:text-white transition">
+          </Link>
+          <Link href="https://x.com/gem_vic" target="_blank" className="text-2xl text-gray-400 hover:text-white transition">
             <FaTwitter />
-          </a>
+          </Link>
         </div>
       </motion.section>
     </main>

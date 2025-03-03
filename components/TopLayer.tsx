@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { motion, useMotionTemplate, useMotionValue, useMotionValueEvent, animate } from "framer-motion";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion, useMotionTemplate, useMotionValue, useMotionValueEvent, animate } from "framer-motion";
+import Link from "next/link";
 import MyPic from "@/components/asset/vitor.png"
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
@@ -78,15 +79,15 @@ export const ProfileBody = () => {
 
         {/* Social Media Links */}
         <div className="mt-4 flex space-x-4">
-          <a href="https://github.com/gem870" target="_blank" rel="noopener noreferrer">
+          <Link href="https://github.com/gem870" target="_blank" rel="noopener noreferrer">
             <FaGithub className="text-white text-2xl hover:text-gray-400 transition" />
-          </a>
-          <a href="https://www.linkedin.com/in/chibuike-emmanuel-b8b29b269/" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link href="https://www.linkedin.com/in/chibuike-emmanuel-b8b29b269/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-white text-2xl hover:text-gray-400 transition" />
-          </a>
-          <a href="https://x.com/gem_vic" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link href="https://x.com/gem_vic" target="_blank" rel="noopener noreferrer">
             <FaTwitter className="text-white text-2xl hover:text-gray-400 transition" />
-          </a>
+          </Link>
         </div>
 
         {/* Skills */}

@@ -5,6 +5,7 @@ import DOMPurify from "dompurify";
 import React, { useEffect, useState } from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/github.css"; // Highlight.js theme
+import { motion } from "framer-motion";
 
 export default function BlogPage() {
   const params = useParams(); // ✅ Correct way to access params
@@ -102,7 +103,11 @@ export default function BlogPage() {
           />
         </div>
 
-        <div className=" xl:w-[70%] relative p-1 rounded-lg shadow-lg">
+        <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.9 }}
+            className=" xl:w-[70%] relative p-1 rounded-lg shadow-lg">
           <button
             onClick={copyCode}
             className="absolute top-2 right-4 bg-gray-200 bg-opacity-60 text-gray-600 px-4 py-2 mt-2 rounded-md shadow-lg text-xs hover:bg-gray-300"
@@ -115,7 +120,7 @@ export default function BlogPage() {
               {blog?.code || "Loading content..."}
             </code>
           </pre>
-        </div>
+        </motion.section>
       </div>
     </div>
   );

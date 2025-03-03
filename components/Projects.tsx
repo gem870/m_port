@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { motion, useMotionValue, useMotionValueEvent, animate } from "framer-motion";
-import Image from "next/image";
 import DOMPurify from "dompurify";
 import Link from "next/link";
 
